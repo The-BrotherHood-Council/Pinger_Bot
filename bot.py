@@ -21,26 +21,26 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**I'm Pinger Bot**, I will help you to mention near about all the members in your group and channel 👻\nClick **/help** for more information__\n\n Follow [@TBH_COUNCIL_SUPPORT](https://github.com/The-BrotherHood-Council) on Github",
+    "__**I'm Pinger Bot**, I will help you to mention near about all the members in your group and channel 👻\nClick **/help** for more information__\n\n Follow [The Brotherhood Council](https://github.com/The-BrotherHood-Council) on Github",
     link_preview=False,
     buttons=(
       [
         Button.url('📣 Channel', 'https://t.me/THE_BROTHERHOOD_COUNCIL'),
-        Button.url('📦 Source', 'https://github.com/ShikariBaaZ/MentionAll_Bot')
+        Button.url('📦 Support', 'https://t.me/TBH_COUNCIL_SUPPORT')
       ]
     )
   )
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of Pinger_Bot**\n\nCommand: /mentionall\n__You can use this command with text what you want to say to others.__\n`Example: /mentionall Brotherhood Council Always on Fire!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [@TBH_COUNCIL_SUPPORT](https://github.com/The-BrotherHood-Council) on Github"
+  helptext = "**Help Menu of Pinger_Bot**\n\nCommand: /mentionall\n__You can use this command with text what you want to say to others.__\n`Example: /mentionall Brotherhood Council Always on Fire!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [The Brotherhood Council](https://github.com/The-BrotherHood-Council) on Github"
   await event.reply(
     helptext,
     link_preview=False,
     buttons=(
       [
         Button.url('📣 Channel', 'https://t.me/THE_BROTHERHOOD_COUNCIL'),
-        Button.url('📦 Source', 'https://github.com/ShikariBaaZ/MentionAll_Bot')
+        Button.url('📦 Support', 'https://t.me/TBH_COUNCIL_SUPPORT')
       ]
     )
   )
